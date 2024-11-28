@@ -1,0 +1,13 @@
+{
+  "name": "personal-website",
+  "version": "1.0.0",
+  "description": "A personal website to showcase projects and resume",
+  "main": "index.js",
+  "scripts": {
+    "build": "echo 'Building the project...'"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "path": "^0.12.7"
+  }
+}

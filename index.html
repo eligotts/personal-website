@@ -2,33 +2,89 @@
 layout: default
 ---
 
-# Eli Gottlieb's Website
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ site.title }}</title>
+    <link rel="stylesheet" href="{{ '/style.css' | relative_url }}">
+    <script src="{{ '/script.js' | relative_url }}" defer></script>
+</head>
+<body>
 
-Welcome to my personal website. Here you can find information about my projects, resume, and how to contact me.
+<header>
+    <div class="logo">
+        <h1>Eli Gottlieb's Website</h1>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="#about-me">About Me</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
 
-## About Me
+<main>
 
-Hello! I'm Eli Gottlieb, a passionate developer with a love for creating innovative solutions. I have experience in various programming languages and frameworks, and I enjoy working on both front-end and back-end projects. In my free time, I like to explore new technologies and contribute to open-source projects.
+    <section id="hero" class="hero-section">
+        <div class="hero-content">
+            <h2>Showcasing my projects, resume, and contact information</h2>
+            <p>Hello! I'm Eli Gottlieb, a passionate developer who loves creating innovative solutions in both front-end and back-end technologies.</p>
+            <a href="#projects" class="hero-button">View My Work</a>
+        </div>
+    </section>
 
-## Projects
+    <section id="about-me" class="content-section">
+        <h2>About Me</h2>
+        <p>
+            I have experience in various programming languages and frameworks, and I enjoy working on both front-end and back-end projects. 
+            In my free time, I like to explore new technologies, contribute to open-source projects, and push myself to learn and grow every day.
+        </p>
+    </section>
 
-Here are some of my personal projects:
+    <section id="projects" class="content-section">
+        <h2>Projects</h2>
+        <ul class="projects-list">
+            <li>
+                <a href="#" class="project-link">Project 1</a>
+                <p class="project-description">Brief description of project 1.</p>
+            </li>
+            <li>
+                <a href="#" class="project-link">Project 2</a>
+                <p class="project-description">Brief description of project 2.</p>
+            </li>
+            <li>
+                <a href="#" class="project-link">Project 3</a>
+                <p class="project-description">Brief description of project 3.</p>
+            </li>
+        </ul>
+    </section>
 
-- [Project 1](https://github.com/username/project1) - Brief description of project 1.
-- [Project 2](https://github.com/username/project2) - Brief description of project 2.
-- [Project 3](https://github.com/username/project3) - Brief description of project 3.
+    <section id="resume" class="content-section">
+        <h2>Resume</h2>
+        <p>A brief introduction to my resume. For more detailed information, check out the PDF below.</p>
+        <a href="#" class="resume-button">Download Resume</a>
+    </section>
 
-## Resume
+    <section id="contact" class="content-section">
+        <h2>Contact Me</h2>
+        <p>You can reach me at: <a href="mailto:myemail@example.com">myemail@example.com</a></p>
+        <p>Connect with me on:</p>
+        <ul class="social-links">
+            <li><a href="#">LinkedIn</a></li>
+            <li><a href="#">GitHub</a></li>
+            <li><a href="#">HuggingFace</a></li>
+        </ul>
+    </section>
 
-Here is a brief introduction to my resume:
+</main>
 
-[Download Resume](resume.pdf)
+<footer>
+    <p>© {{ "now" | date: "%Y" }} Eli Gottlieb</p>
+</footer>
 
-## Contact Me
-
-You can reach me at: [myemail@example.com](mailto:myemail@example.com)
-
-Connect with me on:
-- [LinkedIn](#)
-- [GitHub](#)
-- [HuggingFace](#)
+</body>
+</html>
